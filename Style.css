@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f7;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#addTaskBtn {
+  background: #28a745;
+ 
+  color: white;
+  cursor: pointer;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-left: 5px solid transparent;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.task.high { border-color: red; }
+.task.medium { border-color: orange; }
+.task.low { border-color: green; }
+
+.task.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task span {
+  flex: 1;
+  cursor: pointer;
+}
+
+.timestamp {
+  font-size: 0.8em;
+  color: gray;
+  margin-left: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.filters button {
+  margin: 5px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.filters .active {
+  background: #0056b3;
+}
+
+#clearCompleted {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.task input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.save-btn {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
